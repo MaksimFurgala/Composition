@@ -10,5 +10,22 @@
     <string name="button_text_level_easy">Легкий</string>
     <string name="button_text_level_normal">Средний</string>
     <string name="button_text_level_hard">Тяжелый</string>
+    <string name="question_mark">\?</string>
+    <string name="progress_answers">Правильных ответов %s (минимум %s)</string>
+    <string name="default_text_tv_sum">1</string>
+    <string name="start_value_tv_timer">00:00</string>
+    <string name="default_text_tv_left_number">7</string>
+    <string name="default_text_tv_option_1">1</string>
+    <string name="default_text_tv_option_2">2</string>
+    <string name="default_text_tv_option_3">3</string>
+    <string name="default_text_tv_option_4">4</string>
+    <string name="default_text_tv_option_5">5</string>
+    <string name="default_text_tv_option_6">6</string>
+    <string name="smile_result">SmileResult</string>
+    <string name="tv_required_answers">Необходимое количество правильных ответов: %s</string>
+    <string name="tv_score_answers">Ваш счет: %s</string>
+    <string name="tv_required_percentage">Необходимый процент правильных ответов</string>
+    <string name="tv_score_percentage">Процент правильных ответов</string>
+    <string name="btn_text_retry">Попробовать снова</string>
 
 </resources>
