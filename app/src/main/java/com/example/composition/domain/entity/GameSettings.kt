@@ -1,5 +1,7 @@
 package com.example.composition.domain.entity
 
+import java.io.Serializable
+
 /**
  * Класс настройки игры.
  *
@@ -14,4 +16,4 @@ data class GameSettings(
     val minCountOfRightAnswers: Int,
     val minPercentOfRightAnswers: Int,
     val gameTimeInSeconds: Int
-)
+): Serializable

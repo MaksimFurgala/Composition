@@ -1,5 +1,7 @@
 package com.example.composition.domain.entity
 
+import java.io.Serializable
+
 /**
  * Результат игры.
  *
@@ -14,4 +16,4 @@ data class GameResult (
     val countOfRightAnswers: Int,
     val countOfQuestions: Int,
     val gameSettings: GameSettings
-)
+): Serializable
