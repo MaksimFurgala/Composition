@@ -14,7 +14,7 @@ data class Question (
     val options: List<Int>
 ) {
     /**
-     * Правильный ответ, в зависимости
+     * Правильный ответ, в зависимости от того какая сумма и левый операнд (видимый)
      */
     val rightAnswer: Int
         get() = sum - visibleNumber

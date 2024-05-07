@@ -26,6 +26,9 @@ class ChooseLevelFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        /**
+         * Установка слушателей для вариантов выбра сложности игры.
+         */
         with(binding) {
             buttonLevelTest.setOnClickListener {
                 launchGameFragment(Level.TEST)
@@ -42,6 +45,11 @@ class ChooseLevelFragment : Fragment() {
         }
     }
 
+    /**
+     * Запуск фрагмента GameFragment в зависимости от уровня сложности игры.
+     *
+     * @param level - уровень сложности игры
+     */
     private fun launchGameFragment(level: Level) {
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.main_container, GameFragment.newInstance(level))

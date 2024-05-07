@@ -7,7 +7,7 @@ import com.example.composition.domain.repository.GameRepository
 /**
  * Use-case для генерации вопроса.
  *
- * @property repository
+ * @property repository - репозиторий
  * @constructor Create empty Generate question use case
  */
 class GenerateQuestionUseCase(private val repository: GameRepository) {
@@ -16,9 +16,7 @@ class GenerateQuestionUseCase(private val repository: GameRepository) {
     }
 
     private companion object {
-        /**
-         * Количество возможных вариантов ответа.
-         */
+        // Количество возможных вариантов ответа.
         private const val COUNT_OF_OPTIONS = 6
     }
 }

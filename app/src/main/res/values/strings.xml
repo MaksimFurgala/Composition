@@ -25,7 +25,6 @@
     <string name="tv_required_answers">Необходимое количество правильных ответов: %d</string>
     <string name="tv_score_answers">Ваш счет: %d</string>
     <string name="tv_required_percentage">Необходимый процент правильных ответов: %d</string>
-    <string name="tv_score_percentage">Процент правильных ответов</string>
+    <string name="tv_score_percentage">Процент правильных ответов: %d</string>
     <string name="btn_text_retry">Попробовать снова</string>
-
 </resources>
