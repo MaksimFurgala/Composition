@@ -21,13 +21,11 @@ import java.lang.RuntimeException
 class GameFragment : Fragment() {
     // Уровень сложности игры.
     private lateinit var level: Level
-
-    // GameViewModel
-    private val viewModel: GameViewModel by lazy {
-        ViewModelProvider(
-            this,
-            ViewModelProvider.AndroidViewModelFactory.getInstance(requireActivity().application)
-        )[GameViewModel::class.java]
+    private val viewModelFactory by lazy {
+        GameViewModelFactory(level, requireActivity().application)
+    }
+    private val viewModel by lazy {
+        ViewModelProvider(this, viewModelFactory)[GameViewModel::class.java]
     }
 
     // Коллекция TextView с вариантами ответов.
@@ -63,7 +61,6 @@ class GameFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         observeVIewModel()
         setOnClickListenersToOptions()
-        viewModel.startGame(level)
     }
 
     /**
