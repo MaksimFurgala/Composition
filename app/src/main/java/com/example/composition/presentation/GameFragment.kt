@@ -21,7 +21,7 @@ import com.example.composition.domain.entity.Level
 import java.lang.RuntimeException
 
 class GameFragment : Fragment() {
-    //
+    //Аргументы фрагмента
     private val args by navArgs<GameFragmentArgs>()
 
     // Уровень сложности игры.
@@ -66,7 +66,6 @@ class GameFragment : Fragment() {
 
     /**
      * Установка слушателей для вариантов ответа.
-     *
      */
     private fun setOnClickListenersToOptions() {
         for (tvOption in tvOptions) {
